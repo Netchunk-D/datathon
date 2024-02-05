@@ -88,7 +88,7 @@
   </div>
   <div class="centre">
     <button type="button" id="stimulateButton" onclick="stimulate()" class="btn btn-outline-primary">
-      Stimulation
+      Simulation
     </button>
   </div>
 
@@ -214,8 +214,8 @@
         card.querySelector("small").classList.remove("rs")
         card.querySelector("samll").classList.add("rg")
       }
-      card.querySelector("#Ia").textContent = `Phase 1 Current ${iv["Ia"]}`;
-      card.querySelector("#V").textContent = `Phase 1 Voltage ${iv["Va"]}`;
+      card.querySelector("#Ia").textContent = `Phase 1 Current ${iv["Ia"]} Amps`;
+      card.querySelector("#V").textContent = `Phase 1 Voltage ${iv["Va"]} Volts`;
       card.querySelector(
         "small"
       ).textContent = `Last updated: ${lastUpdated}`;
