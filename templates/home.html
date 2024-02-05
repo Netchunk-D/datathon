@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        /* Custom CSS */
+        body {
+    background-color: #C3E2C2;/* Set your desired background color */
+    font-family: 'Roboto', sans-serif; /* Add a default font-family */
+    margin: 0; /* Remove default margin to ensure full-page background color */
+    padding: 0; /* Remove default padding */
+}
+        <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+      .btn{
+
+      font-family: Roboto, sans-serif;
+      font-weight: 0;
+      font-size: 14px;
+      color: #fff;
+      background: linear-gradient(90deg, #5c8bba 0%, #c500cc 100%);
+      padding: 10px 30px;
+      border: 2px solid #0066cc;
+      box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+      border-radius: 50px;
+      transition : 1000ms;
+      transform: translateY(0);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      }
+
+      .btn:hover{
+
+      transition : 1000ms;
+      padding: 10px 50px;
+      transform : translateY(-0px);
+      background: linear-gradient(90deg, #abc4dd 0%, #79717a 100%);
+      color: #101112;
+      border: solid 2px #0066cc;
+      }
+
+        .carousel-indicators {
+          bottom: 0;
+        }
+
+        .carousel-indicators li {
+          background-color: #888;
+          border: 1px solid #888;
+        }
+
+        .carousel-indicators .active {
+          background-color: #333;
+          border: 1px solid #333;
+        }
+
+        /* Center the h1 */
+        .page-title {
+          text-align: center;
+          padding-bottom: 15px;
+        }
+
+        /* Enlarge the cards */
+        .card {
+          height: 500px;
+          width: 80%;
+          margin: 0 auto;
+          background-color: #faf4db;
+          border-radius: 15px; /* Adjust the radius as needed */
+        }
+
+        /* Center the button */
+        .carousel-control-prev,
+        .carousel-control-next {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        /* Center the button in the card */
+        .card .btn-primary {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .sz{
+            font-size: 90px;
+        }
+        .sz1{
+            font-size: 70px;
+        }
+        .sz2{
+            font-size: 50px;
+        }
+        .sz3{
+            font-size: 25px;
+        }
+        form {
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="page-title">
+        Real-time Fault Detection and Localization with AI
+      </h1>
+      <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title sz2">Real Time Data Collection</h5>
+                <p class="card-text sz3">We collect the real time data from power stations.<br> And send it Server.<br>
+                As of now we are using a node server which sends data to our server for simulation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title sz">Now Don,t need to <br>waste a lot of time for power cuts</h5>
+                <!-- <p class="card-text">This is the content of card 2.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title sz1">We are are here to enhance your Operational efficency and save your valuable Time.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Last Card</h5>
+                <p class="card-text">This is the content of the last card.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#cardCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#cardCarousel" data-slide-to="1"></li>
+          <li data-target="#cardCarousel" data-slide-to="2"></li>
+        </ol>
+      </div>
+    </div>
+    <form action="/graph" method="get">
+      <button type="submit" class="btn">Simulate</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
